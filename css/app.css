@@ -1,0 +1,159 @@
+@import url(./bootstrap.min.css);
+@import url(./bootstrap-grid.min.css);
+
+/*font custom start*/
+@font-face {
+  font-family: 'Metropolis';
+  src: url('./css/font/Metropolis-Regular.woff2') format('woff2'),
+      url('./css/font/Metropolis-Regular.woff') format('woff');
+  font-style: normal;
+}
+/*font custom end*/
+
+/*general custom start*/
+:root {
+  --metropolis:system-ui,-apple-system,'Metropolis';  
+  --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+ 
+}
+body {
+    margin: 0;
+    font-family: var(--metropolis);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #404040;
+    background-image: linear-gradient(to top, #EDF0F5 0%, #F5F7FA 100%);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    
+}
+
+.row {
+  --bs-gutter-x: .5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x)/ -2);
+  margin-left: calc(var(--bs-gutter-x)/ -2);
+}
+.rounded-bg{
+    background-color:rgba(87, 157, 252, .3);
+    padding: .8rem 1.5rem;
+    border-radius: 1.5rem; 
+}
+/*general custom end*/
+/*text custom start*/
+ .m-bold{
+  font-weight: 750;
+}
+ .m-erro{
+  font-style: italic;
+  color:#FB0000 ;
+}
+ .m-small{
+  font-size: 0.7rem ;
+}
+.m-big{
+  font-size: 1.7rem;
+}
+/*text custom end*/
+/*white cards start*/
+.indie-white-card{
+background: #FFFFFF;
+box-shadow: 2px 2px 16px #707070BF;
+border-radius: 1rem;
+margin:1.2rem auto;
+padding:1.3rem 1.1rem;
+opacity: 1;
+}
+/*white cards end*/
+/*form custom start*/
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .3rem .2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #404040;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: transparent;
+  border-bottom: 2px solid #404040;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  transition: none;
+}
+
+.form-check-input:checked {
+  background-color: #0005FB;
+  border-color: #0005FB;
+}
+
+.form-select {
+  display: block;
+  width: 100%;
+  padding: .375rem 1.75rem .375rem .1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: right .75rem center;
+  background-size: 16px 12px;
+  border: transparent;
+  border-bottom: 2px solid #404040;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/*form custom end*/
+
+/*outline-button custom start*/
+.btn-outline-primary {
+  color: #0005FB;
+  border-color: #0005FB;
+}
+.btn-outline-primary:hover {
+  color: #ffffff;
+  border-color: transparent;
+  background-color: #0005FB;
+}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #0005FB;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 2px solid #0005FB;
+  padding: .4rem 2rem;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  transition: none;
+}
+/*outline-button custom end*/
+
+/*blue-button custom start*/
+.btn-primary {
+  color: #fff;
+  background-color: #0005FB;
+  border-color: #0005FB;
+}
+.btn-primary:hover {
+  background-color:#1D6DFB ;
+}
+/*blue-button custom end*/
+
